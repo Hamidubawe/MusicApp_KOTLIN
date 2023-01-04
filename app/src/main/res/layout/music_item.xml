@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#111111"
+    android:layout_marginTop="5dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/musicImage"
+        android:src="@drawable/music_image"
+        android:padding="1dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="file name.."
+        android:id="@+id/musicName"
+        android:layout_toEndOf="@id/musicImage"
+        android:layout_marginStart="10dp"
+        android:maxLines="1"
+        android:layout_toStartOf="@id/menu_options"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="artist name.."
+        android:id="@+id/musicArtist"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/musicName"
+        android:layout_toEndOf="@id/musicImage"
+        android:layout_marginStart="10dp"
+        android:maxLines="1"
+        android:textColor="@color/colorAccent"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:id="@+id/menu_options"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_option"
+        android:layout_centerVertical="true"/>
+
+
+</RelativeLayout>
